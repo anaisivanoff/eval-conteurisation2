@@ -3,7 +3,6 @@ const { Client } = require("pg");
 
 const PORT = process.env.PORT || 3000;
 
-// Connexion à PostgreSQL via les variables d'environnement
 const client = new Client({
   host:     process.env.DB_HOST,
   port:     process.env.DB_PORT || 5432,
